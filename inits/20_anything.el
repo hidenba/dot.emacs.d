@@ -27,7 +27,6 @@
   (lambda ()
     (define-key ruby-mode-map (kbd "C-@") 'anything-rdefs)))
 
-
 (require 'anything-rurima)
 (setq anything-rurima-index-file "~/Documents/rurema/rubydoc/rurima.e")
 (global-set-key (kbd "C-c C-r") 'anything-rurima)
