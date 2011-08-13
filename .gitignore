@@ -1,0 +1,11 @@
+*.elc
+ac-comphist.dat
+ac-dict/
+auto-save-list/
+elisp/
+elpa/
+history
+info/
+plugins/
+share/
+url/
