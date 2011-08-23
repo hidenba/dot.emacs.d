@@ -44,4 +44,3 @@
 ;;   (anything-read-string-mode 1)
 ;;   )
 ;;(anything-read-string-mode 0)
-
