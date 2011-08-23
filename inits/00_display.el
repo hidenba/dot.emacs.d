@@ -22,11 +22,10 @@
               initial-frame-alist))
 (setq default-frame-alist initial-frame-alist)
 
-;; (set-face-attribute 'default nil
-;;                    :family "Ricty"
-;;                    :height 160)
-;; (set-fontset-font
-;;  nil 'japanese-jisx0208
-;;  (font-spec :family "Ricty"))
+(set-face-attribute 'default nil
+                   :family "Ricty"
+                   :height 160)
+(set-fontset-font
+ nil 'japanese-jisx0208
+ (font-spec :family "Ricty"))
 
-(add-to-list 'default-frame-alist '(font . "ricty-12"))
