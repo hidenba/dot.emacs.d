@@ -2,6 +2,7 @@
 (add-to-list 'load-path "~/.emacs.d/elisp/rinari")
 (require 'rinari)
 (require 'ruby-compilation-rspec)
+(setq rinari-tags-file-name "TAGS")
 
 ;; haml & sass
 (add-to-list 'load-path "~/.emacs.d/elisp/haml-mode")

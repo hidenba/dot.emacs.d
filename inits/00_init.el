@@ -12,7 +12,7 @@
 ;;自動バイトコンパイル
 (require 'auto-async-byte-compile)
 (add-hook 'emacs-lisp-mode-hook 'enable-auto-async-byte-compile-mode)
- 
+
 (show-paren-mode 1)
 (setq backup-inhibited t)
 (setq delete-auto-save-files t)
@@ -21,7 +21,7 @@
 (icomplete-mode 1)
 
 ;; タブ設定
-(setq-default indent-tabs-mode nil) 
+(setq-default indent-tabs-mode nil)
 ;; 履歴の保存
 (savehist-mode 1)
 (setq history-length 1000)
@@ -38,12 +38,12 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; バッファ名をユニークニする
-;; (require 'uniquify)
-;; (setq uniquify-buffer-name-style 'post-foward-angle-brackets)
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'post-forward-angle-brackets)
 ;; (setq uniquify-ignore-buffers-re "*[^*]+*")
 
 ;; デバッグ
-;; (setq debug-on-error t)                 
+;; (setq debug-on-error t)
 
 ;; 行末空白の自動削除
 (add-hook 'before-save-hook 'delete-trailing-whitespace)

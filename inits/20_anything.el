@@ -32,6 +32,8 @@
 (global-set-key (kbd "C-c C-r") 'anything-rurima)
 (global-set-key (kbd "C-c C-p") 'anything-rurima-at-point)
 
+(require 'descbinds-anything)
+(descbinds-anything-install)
 
 ;;; anything-complete.el replaces various completion with anything
 ;;; (like Icicles). Use Anything power for normal completion.
