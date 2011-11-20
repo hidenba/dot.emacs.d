@@ -40,7 +40,7 @@
 ;; バッファ名をユニークニする
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
-;; (setq uniquify-ignore-buffers-re "*[^*]+*")
+(setq uniquify-ignore-buffers-re "*[^*]+*")
 
 ;; デバッグ
 ;; (setq debug-on-error t)
