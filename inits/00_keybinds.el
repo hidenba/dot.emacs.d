@@ -9,14 +9,17 @@
 (define-key global-map "\C-c\C-i" 'dabbrev-expand)
 (define-key global-map "\C-c;" 'comment-region)
 (define-key global-map "\C-c:" 'uncomment-region)
-(define-key global-map "\C-\\" nil) 
+(define-key global-map "\C-\\" nil)
 (define-key global-map "\C-c " 'other-frame)
 
 ;; 画面分割
 (define-key global-map "\C-t" 'follow-delete-other-windows-and-split)
 
-;; recentf 
+;; recentf
 (define-key global-map "\C-c\C-e" 'recentf-open-files)
 
 ;; wdired-mode(編集モードを追加)
 (define-key dired-mode-map "r" 'wdired-change-to-wdired-mode)
+
+;; find-functionにキー割り当て
+(find-function-setup-keys)

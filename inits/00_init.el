@@ -2,16 +2,21 @@
 (require 'info)
 (add-to-list 'Info-additional-directory-list "~/.emacs.d/info")
 
-;;auto-install
-(require 'auto-install)
-(setq auto-install-directory "~/.emacs.d/elisp/")
-(add-to-list 'load-path auto-install-directory)
-;(auto-install-update-emacswiki-package-name t)
-(auto-install-compatibility-setup)
+(require 'open-junk-file)
+(global-set-key (kbd "C-x C-z") 'open-junk-file)
 
-;;自動バイトコンパイル
-(require 'auto-async-byte-compile)
-(add-hook 'emacs-lisp-mode-hook 'enable-auto-async-byte-compile-mode)
+(require 'lispxmp)
+(define-key emacs-lisp-mode-map (kbd "C-c C-d") 'lispxmp)
+
+(require 'paredit)
+(add-hook 'emacs-lisp-mode-hook 'enable-paredit-mode)
+(add-hook 'lisp-interaction-mode-hook 'enable-paredit-mode)
+(add-hook 'lisp-mode-hook 'enable-paredit-mode)
+(add-hook 'ielm-mode-hook 'enable-paredit-mode)
+
+(setq eldoc-idle-delay 0.2)
+(setq eldoc-minor0mode-string "")
+(global-set-key "\C-m" 'newline-and-indent)
 
 (show-paren-mode 1)
 (setq backup-inhibited t)
