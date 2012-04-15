@@ -1,6 +1,6 @@
 ;; optionとcommandの入れ替え
-(setq ns-command-modifier (quote meta))
-(setq ns-alternate-modifier (quote super))
+;(setq ns-command-modifier (quote meta))
+;(setq ns-alternate-modifier (quote super))
 
 (define-key global-map "\C-h" 'delete-backward-char)
 (define-key global-map "\M-?" 'help-for-help)

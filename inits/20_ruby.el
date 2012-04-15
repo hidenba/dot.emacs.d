@@ -16,9 +16,6 @@
   (define-key ruby-mode-map "\C-c\C-f" 'rct-ri))
 (add-hook 'ruby-mode-hook 'ruby-mode-hook-rcodetools)
 
-(require 'rvm)
-(rvm-use-default)
-
 (require 'mode-compile)
 
 (require 'rspec-mode)

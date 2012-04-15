@@ -25,7 +25,7 @@
 (setq ar:command "/usr/local/bin/rdefs.rb")
 (add-hook 'ruby-mode-hook
   (lambda ()
-    (define-key ruby-mode-map (kbd "C-@") 'anything-rdefs)))
+    (define-key ruby-mode-map (kbd "C-.") 'anything-rdefs)))
 
 (require 'anything-rurima)
 (setq anything-rurima-index-file "~/Documents/rurema/rubydoc/rurima.e")

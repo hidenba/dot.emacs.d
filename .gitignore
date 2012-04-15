@@ -1,11 +1,11 @@
 *.elc
 ac-comphist.dat
-ac-dict/
+ac-dict/*
 auto-save-list/
-elisp/
+elisp/*
 elpa/
 history
 info/
-plugins/
+plugins/*
 share/
 url/

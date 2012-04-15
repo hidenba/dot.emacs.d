@@ -48,7 +48,7 @@
 (setq uniquify-ignore-buffers-re "*[^*]+*")
 
 ;; デバッグ
-;; (setq debug-on-error t)
+(setq debug-on-error t)
 
 ;; 行末空白の自動削除
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
