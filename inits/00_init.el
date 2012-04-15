@@ -52,3 +52,6 @@
 
 ;; 行末空白の自動削除
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+;; beep音
+(setq visible-bell t)
