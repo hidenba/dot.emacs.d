@@ -19,13 +19,13 @@
 (require 'anything-rcodetools)
 (setq rct-get-all-methods-command "PAGER=cat fri -l")
 ;; See docs
-(define-key anything-map [(control ?;)] 'anything-execute-persistent-action)
+;;(define-key anything-map [(control ?;)] 'anything-execute-persistent-action)
 
 (require 'anything-rdefs)
 (setq ar:command "/usr/local/bin/rdefs.rb")
 (add-hook 'ruby-mode-hook
   (lambda ()
-    (define-key ruby-mode-map (kbd "C-.") 'anything-rdefs)))
+    (define-key ruby-mode-map (kbd "C-c #") 'anything-rdefs)))
 
 (require 'anything-rurima)
 (setq anything-rurima-index-file "~/Documents/rurema/rubydoc/rurima.e")
