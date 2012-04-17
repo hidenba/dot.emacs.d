@@ -21,7 +21,6 @@
 (require 'rspec-mode)
 (setq rspec-use-rake-flag t)
 (setq rspec-spec-command "rspec")
-(setq rspec-use-rvm t)
 
 (require 'ruby-block)
 (ruby-block-mode t)

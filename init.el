@@ -1,4 +1,4 @@
-(server-start)
+;(server-start)
 (add-to-list 'load-path "~/.emacs.d/elisp")
 (require 'init-loader)
 (init-loader-load "~/.emacs.d/inits")
