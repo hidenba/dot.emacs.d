@@ -3,7 +3,7 @@
 (add-to-list 'Info-additional-directory-list "~/.emacs.d/info")
 
 (require 'open-junk-file)
-(global-set-key (kbd "C-x C-z") 'open-junk-file)
+(global-set-key (kbd "C-x C-a") 'open-junk-file)
 
 (require 'lispxmp)
 (define-key emacs-lisp-mode-map (kbd "C-c C-d") 'lispxmp)
@@ -22,7 +22,6 @@
 (setq backup-inhibited t)
 (setq delete-auto-save-files t)
 (setq completion-ignore-case t)
-(partial-completion-mode 1)
 (icomplete-mode 1)
 
 ;; タブ設定
@@ -55,3 +54,20 @@
 
 ;; beep音
 (setq visible-bell t)
+
+;; ;; クリップボード監視
+;; (require 'clipboard-to-kill-ring)
+;; (clipboard-to-kill-ring t)
+
+; http://blog.lathi.net/articles/2007/11/07/sharing-the-mac-clipboard-with-emacs
+(defun copy-from-osx ()
+   (shell-command-to-string "pbpaste"))
+
+(defun paste-to-osx (text &optional push)
+   (let ((process-connection-type nil))
+          (let ((proc (start-process "pbcopy" "*Messages*" "pbcopy")))
+                   (process-send-string proc text)
+                          (process-send-eof proc))))
+
+(setq interprogram-cut-function 'paste-to-osx)
+(setq interprogram-paste-function 'copy-from-osx)

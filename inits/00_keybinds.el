@@ -18,8 +18,5 @@
 ;; recentf
 (define-key global-map "\C-c\C-e" 'recentf-open-files)
 
-;; wdired-mode(編集モードを追加)
-(define-key dired-mode-map "r" 'wdired-change-to-wdired-mode)
-
 ;; find-functionにキー割り当て
 (find-function-setup-keys)

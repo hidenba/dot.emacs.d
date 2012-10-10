@@ -23,4 +23,11 @@
               initial-frame-alist))
 (setq default-frame-alist initial-frame-alist)
 
-(add-to-list 'default-frame-alist '(font . "ricty-18"))
+
+;;(add-to-list 'default-frame-alist '(font . "ricty-18"))
+
+(set-face-attribute 'default nil
+                   :family "Ricty"
+                   :height 160)
+
+(set-foreground-color "White")
