@@ -1,4 +1,3 @@
-;(server-start)
 (add-to-list 'load-path "~/.emacs.d/elisp")
 (require 'init-loader)
 (init-loader-load "~/.emacs.d/inits")
@@ -8,3 +7,5 @@
  (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
      (normal-top-level-add-subdirs-to-load-path)))
 (put 'dired-find-alternate-file 'disabled nil)
+
+(server-start)

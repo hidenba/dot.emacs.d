@@ -5,4 +5,4 @@
     (set-window-buffer window buf)
     window))
 
-(setq anything-display-function 'display-buffer-function--split-root)
+(setq helm-display-function 'display-buffer-function--split-root)
