@@ -1,4 +1,5 @@
-(setq load-path (cons "~/.emacs.d/elisp/howm" load-path))
+(add-to-list 'load-path "~/.emacs.d/elisp/howm/")
+
 (setq howm-menu-lang 'ja)
 (global-set-key "\C-c,," 'howm-menu)
 (mapc

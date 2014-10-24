@@ -1,16 +1,19 @@
 ;; Rinari
-(add-to-list 'load-path "~/.emacs.d/elisp/rinari")
 (require 'rinari)
-(require 'ruby-compilation-rspec)
+(global-rinari-mode)
+;; (require 'ruby-compilation-rspec)
 (setq rinari-tags-file-name "TAGS")
 
 ;; haml & sass
-(add-to-list 'load-path "~/.emacs.d/elisp/haml-mode")
-(add-to-list 'load-path "~/.emacs.d/elisp/sass-mode")
 (require 'haml-mode nil 't)
 (add-to-list 'auto-mode-alist '("\\.haml$" . haml-mode))
 (require 'sass-mode nil 't)
-(add-to-list 'auto-mode-alist '("\\.haml$" . sass-mode))
+(add-to-list 'auto-mode-alist '("\\.sass$" . sass-mode))
 
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+
+(add-hook 'ruby-mode-hook
+          '(lambda ()
+             (define-key ruby-mode-map "\C-c,t" 'rinari-find-rspec)
+           ))

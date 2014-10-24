@@ -1,2 +1,2 @@
-(require 'sense-region)
-(sense-region-on)
+;; (require 'sense-region)
+;; (sense-region-on)

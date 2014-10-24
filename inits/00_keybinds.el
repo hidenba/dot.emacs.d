@@ -11,6 +11,7 @@
 (define-key global-map "\C-c:" 'uncomment-region)
 (define-key global-map "\C-\\" nil)
 (define-key global-map "\C-c " 'other-frame)
+(define-key global-map "\C-xr" 'revert-buffer)
 
 ;; 画面分割
 (define-key global-map "\C-t" 'follow-delete-other-windows-and-split)

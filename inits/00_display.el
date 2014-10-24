@@ -30,12 +30,7 @@
                    :family "Ricty"
                    :height 160)
 
+
+(set-fontset-font "fontset-default" 'japanese-jisx0208 '("Ricty" . "iso10646-*"))
+
 (set-foreground-color "White")
-
-(add-to-list 'load-path "~/.emacs.d/elisp/color-theme")
-(require 'color-theme)
-(color-theme-initialize)
-
-(add-to-list 'load-path "~/.emacs.d/elisp/color-theme/themes/emacs-color-theme-solarized")
-(require 'color-theme-solarized)
-(color-theme-solarized-dark)

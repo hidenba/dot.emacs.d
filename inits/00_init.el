@@ -5,15 +5,6 @@
 (require 'open-junk-file)
 (global-set-key (kbd "C-x C-a") 'open-junk-file)
 
-(require 'lispxmp)
-(define-key emacs-lisp-mode-map (kbd "C-c C-d") 'lispxmp)
-
-(require 'paredit)
-(add-hook 'emacs-lisp-mode-hook 'enable-paredit-mode)
-(add-hook 'lisp-interaction-mode-hook 'enable-paredit-mode)
-(add-hook 'lisp-mode-hook 'enable-paredit-mode)
-(add-hook 'ielm-mode-hook 'enable-paredit-mode)
-
 (setq eldoc-idle-delay 0.2)
 (setq eldoc-minor0mode-string "")
 (global-set-key "\C-m" 'newline-and-indent)
@@ -71,3 +62,12 @@
 
 (setq interprogram-cut-function 'paste-to-osx)
 (setq interprogram-paste-function 'copy-from-osx)
+
+(cua-mode t)
+(setq cua-enable-cua-keys nil)
+
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'post-forward-angle-brackets)
+
+(require 'wdired)
+(define-key dired-mode-map "r" 'wdired-change-to-wdired-mode)

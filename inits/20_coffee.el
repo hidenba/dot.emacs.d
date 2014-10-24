@@ -1,4 +1,3 @@
-(setq load-path (cons "~/.emacs.d/elisp/coffee-mode" load-path))
 (require 'coffee-mode)
 
 (add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
