@@ -13,6 +13,7 @@
     (abbrev-mode 1)
     (electric-pair-mode t)
     (electric-indent-mode t)
+    (load-auto-complete)
     (electric-layout-mode t)))
 
 (require 'ruby-hash-syntax)
@@ -31,3 +32,10 @@
              (define-key ruby-mode-map "\C-c,l" 'ruby-test-run-at-point)
              (define-key ruby-mode-map "\C-c,v" 'ruby-test-run)
            ))
+
+; robe
+(autoload 'robe-mode "robe" "Code navigation, documentation lookup and completion for Ruby" t nil)
+(autoload 'ac-robe-setup "ac-robe" "auto-complete robe" nil nil)
+(add-hook 'robe-mode-hook 'ac-robe-setup)
+(custom-set-variables
+ '(robe-completing-read-func 'helm-robe-completing-read))

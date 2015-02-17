@@ -75,3 +75,7 @@
  ;; If there is more than one, they won't work right.
  '(helm-match ((t (:inherit match :foreground "brightyellow"))))
  '(helm-selection ((t (:background "green" :foreground "brightwhite" :underline t)))))
+
+
+(setq max-specpdl-size 6000)
+(setq max-lisp-eval-depth 1000)
