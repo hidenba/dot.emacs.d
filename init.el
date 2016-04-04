@@ -1,3 +1,6 @@
+(add-to-list 'load-path "~/.emacs.d/elisp/cl-lib")
+(require 'cl-lib)
+
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
@@ -45,6 +48,78 @@
     ruby-hash-syntax
     ;; rspec-mode
     ))
+
+  ;; assemblage-theme
+  ;; async
+  ;; auto-async-byte-compile
+  ;; auto-compile
+  ;; auto-complete
+  ;; auto-install
+  ;; coffee-mode
+  ;; color-moccur
+  ;; color-theme
+  ;; color-theme-solarized
+  ;; dash
+  ;; dash-at-point
+  ;; dired-details
+  ;; dockerfile-mode
+  ;; edit-server
+  ;; epl
+  ;; feature-mode
+  ;; findr
+  ;; flycheck
+  ;; flymake-coffee
+  ;; flymake-css
+  ;; flymake-easy
+  ;; flymake-haml
+  ;; flymake-ruby
+  ;; gh
+  ;; haml-mode
+  ;; helm
+  ;; helm-ag-r
+  ;; helm-descbinds
+  ;; helm-flymake
+  ;; helm-git-grep
+  ;; helm-ls-git
+  ;; helm-open-github
+  ;; helm-rails
+  ;; helm-rb
+  ;; helm-robe
+  ;; helm-rubygems-local
+  ;; inf-ruby
+  ;; inflections
+  ;; init-loader
+  ;; itail
+  ;; jump
+  ;; let-alist
+  ;; logito
+  ;; markdown-mode
+  ;; mode-compile
+  ;; open-junk-file
+  ;; packed
+  ;; pcache
+  ;; php-mode
+  ;; pkg-info
+  ;; popup
+  ;; recentf-ext
+  ;; rinari
+  ;; robe
+  ;; rspec-mode
+  ;; ruby-block
+  ;; ruby-compilation
+  ;; ruby-electric
+  ;; ruby-end
+  ;; ruby-hash-syntax
+  ;; ruby-refactor
+  ;; ruby-test-mode
+  ;; sass-mode
+  ;; seq
+  ;; smart-compile
+  ;; swift-mode
+  ;; ttl-mode
+  ;; wwtime
+  ;; yaml-mode
+  ;; yasnippet
 
 (let ((not-installed (loop for x in installing-package-list
 			   when (not (package-installed-p x))

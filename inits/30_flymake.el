@@ -4,6 +4,12 @@
 (add-hook 'css-mode-hook 'flymake-css-load)
 (add-hook 'yml-mode-hook 'flymake-yml-load)
 
+
+(add-hook 'ruby-mode-hook
+          '(lambda ()
+             (setq flycheck-checker 'ruby-rubocop)
+             (flycheck-mode 1)))
+
 ;; ;; flymake for ruby
 ;; (require 'flymake)
 ;; ;; Invoke ruby with '-c' to get syntax checking

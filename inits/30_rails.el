@@ -1,7 +1,6 @@
 ;; Rinari
 (require 'rinari)
 (global-rinari-mode)
-;; (require 'ruby-compilation-rspec)
 (setq rinari-tags-file-name "TAGS")
 
 ;; haml & sass
@@ -13,7 +12,7 @@
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
-(add-hook 'ruby-mode-hook
-          '(lambda ()
-             (define-key ruby-mode-map "\C-c,t" 'rinari-find-rspec)
-           ))
+;; (add-hook 'ruby-mode-hook
+;;           '(lambda ()
+;;              (define-key ruby-mode-map "\C-c,t" 'rinari-find-rspec)
+;;            ))
