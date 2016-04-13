@@ -1,11 +1,6 @@
 *.elc
-ac-comphist.dat
-ac-dict/*
-auto-save-list/
-elisp/*
-elpa/
+elpa
+auto-save-list
+recentf
 history
-info/
-plugins/*
-share/
-url/
+projectile-bookmarks.eld
