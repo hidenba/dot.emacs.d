@@ -7,7 +7,7 @@
 (bind-key "C-c :" 'uncomment-region)
 (bind-key "C-m" 'newline-and-indent)
 (bind-key "C-x SPC" 'cua-set-rectangle-mark)
-
+(bind-key "r" 'wdired-change-to-wdired-mode dired-mode-map )
 
 ;; 画面分割
 (bind-key "C-t" 'follow-delete-other-windows-and-split)
