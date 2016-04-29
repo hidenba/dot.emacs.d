@@ -1,4 +1,5 @@
 *.elc
+.cask
 elpa
 auto-save-list
 recentf
