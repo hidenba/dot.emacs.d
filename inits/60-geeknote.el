@@ -1,0 +1,6 @@
+(bind-key "C-c e c" 'geeknote-create)
+(bind-key "C-c e e" 'geeknote-edit)
+(bind-key "C-c e f" 'geeknote-find)
+(bind-key "C-c e s" 'geeknote-show)
+(bind-key "C-c e r" 'geeknote-remove)
+(bind-key "C-c e m" 'geeknote-move)

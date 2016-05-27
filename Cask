@@ -19,6 +19,7 @@
 (depends-on "feature-mode")
 (depends-on "flycheck")
 (depends-on "flycheck-cask")
+(depends-on "geeknote")
 (depends-on "haml-mode")
 (depends-on "helm")
 (depends-on "helm-ag")
