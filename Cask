@@ -49,6 +49,7 @@
 (depends-on "magit-gh-pulls")
 (depends-on "magit-popup")
 (depends-on "multiple-cursors")
+(depends-on "navi2ch")
 (depends-on "nyan-mode")
 (depends-on "open-junk-file")
 (depends-on "pallet")
