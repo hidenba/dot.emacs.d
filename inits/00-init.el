@@ -51,6 +51,3 @@
 ;; ブラウザ
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "/Users/hidenba/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
-
-;; shからPATHの引き継ぎ
-(exec-path-from-shell-initialize)
